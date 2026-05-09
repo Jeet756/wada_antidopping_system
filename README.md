@@ -75,7 +75,7 @@ The app takes the following inputs:
 ## 🛠️ How to Run Locally
 
 1. **Clone the repository**'`bash
-git clone https://github.com/bhavishyachouhan/anti-doping-streamlit/tree/main
+git clone https://github.com/Jeet756/wada_antidopping_system
 2. Install dependencies
    pip install -r requirements.txt
 3. streamlit run app.py
