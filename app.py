@@ -67,7 +67,17 @@ for name in feature_names:
 
 if st.button("Detect Doping"):
     input_data = np.array([features])
+
+    st.write("Input Data:", input_data)
+
     prediction = model.predict(input_data)
+
+    st.write("Raw Prediction:", prediction)
+
+    try:
+        st.write("Prediction Probability:", model.predict_proba(input_data))
+    except:
+        st.write("Probability not supported")
 
     if prediction[0] == 1:
         st.error("⚠️ Doping Detected!")
