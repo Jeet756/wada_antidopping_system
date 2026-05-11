@@ -79,7 +79,7 @@ if st.button("Detect Doping"):
     except:
         st.write("Probability not supported")
 
-    if prediction[0] == 0:
+    if prediction[0] == 1:
         st.error("⚠️ Doping Detected!")
     else:
         st.success("✅ No Doping Detected.")
